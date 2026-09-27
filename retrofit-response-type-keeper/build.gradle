@@ -1,0 +1,9 @@
+apply plugin: 'org.jetbrains.kotlin.jvm'
+apply plugin: 'com.vanniktech.maven.publish'
+
+dependencies {
+  testImplementation libs.junit
+  testImplementation libs.compileTesting
+  testImplementation libs.truth
+  testImplementation projects.retrofit
+}
